@@ -38,6 +38,7 @@ void setup() {
   pinMode(echoPin,INPUT);
 
   //Servo Pins
+  //CHANGE SERVO ATTACH PIN TO SOMETHING ELSE.
   servo.attach(9);
   servo.write(0);
 }
