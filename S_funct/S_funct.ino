@@ -26,7 +26,6 @@ int Ang=0;
 
 
 void setup() {
-  // put your setup code here, to run once:
   //Stepper Motor Pins
   pinMode(in1,OUTPUT);
   pinMode(in2,OUTPUT);
@@ -44,7 +43,8 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // k = number of steps, 500 was chosen arbitrarily
+  // set k < 2048 for one full revolution
   while (k<500){
       OneStep(false);
       delay(2);
